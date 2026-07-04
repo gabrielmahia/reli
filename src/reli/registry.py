@@ -43,7 +43,7 @@ SERVERS: dict[str, dict] = {
         "desc": "Building blocks for civic AI agents operating on East African data.",
     },
     "offline-mcp": {
-        "module": "offline_mcp", "script": None, "kind": "server",
+        "module": "offline_mcp", "script": "offline-mcp", "kind": "server",
         "packs": ["core"], "gloss": "offline",
         "desc": "Offline-first tooling for intermittent-connectivity environments.",
     },
@@ -54,12 +54,12 @@ SERVERS: dict[str, dict] = {
     },
     # ---- financial ----
     "mpesa-mcp": {
-        "module": "mpesa_mcp", "script": None, "kind": "server",
+        "module": "mpesa_mcp", "script": "mpesa-mcp", "kind": "server",
         "packs": ["financial"], "gloss": "mobile money",
         "desc": "M-PESA payment rails (Daraja) exposed to AI agents — STK push, B2C, transaction status.",
     },
     "kra-mcp": {
-        "module": "kra_mcp", "script": None, "kind": "server",
+        "module": "kra_mcp", "script": "kra-mcp", "kind": "server",
         "packs": ["financial"], "gloss": "tax authority",
         "desc": "Kenya Revenue Authority workflows — PIN checks, filing calendars, obligation lookup.",
     },
@@ -90,12 +90,12 @@ SERVERS: dict[str, dict] = {
     },
     # ---- health ----
     "afya-mcp": {
-        "module": "afya_mcp", "script": None, "kind": "server",
+        "module": "afya_mcp", "script": "afya-mcp", "kind": "server",
         "packs": ["health"], "gloss": "afya = health",
         "desc": "Health system tools — facility lookup, CHW protocols, malnutrition surveillance activation.",
     },
     "afya-ya-akili-mcp": {
-        "module": "afya_ya_akili_mcp", "script": None, "kind": "server",
+        "module": "afya_ya_akili_mcp", "script": "afya-ya-akili-mcp", "kind": "server",
         "packs": ["health"], "gloss": "afya ya akili = mental health",
         "desc": "Mental health resources and referral pathways, Swahili-aware.",
     },
@@ -111,7 +111,7 @@ SERVERS: dict[str, dict] = {
     },
     # ---- agriculture ----
     "kilimo-mcp": {
-        "module": "kilimo_mcp", "script": None, "kind": "server",
+        "module": "kilimo_mcp", "script": "kilimo-mcp", "kind": "server",
         "packs": ["agriculture"], "gloss": "kilimo = agriculture",
         "desc": "Crop advisory — planting calendars, drought-resistant guidance, extension knowledge as tools.",
     },
@@ -121,38 +121,38 @@ SERVERS: dict[str, dict] = {
         "desc": "Drought and water access — NDMA drought phases, borehole registry, county water coverage.",
     },
     "mazingira-mcp": {
-        "module": "mazingira_mcp", "script": None, "kind": "server",
+        "module": "mazingira_mcp", "script": "mazingira-mcp", "kind": "server",
         "packs": ["agriculture"], "gloss": "mazingira = environment",
         "desc": "Environment and climate signals for planning and early warning.",
     },
     # ---- civic ----
     "county-mcp": {
-        "module": "county_mcp", "script": None, "kind": "server",
+        "module": "county_mcp", "script": "county-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "county government",
         "desc": "County government reference — services, budgets, CDF, alert channels for 47 counties.",
     },
     "fomu-mcp": {
-        "module": "fomu_mcp", "script": None, "kind": "server",
+        "module": "fomu_mcp", "script": "fomu-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "fomu = forms",
         "desc": "Government forms and document requirements — what a process needs, where to file, what it costs.",
     },
     "haki-ya-kazi-mcp": {
-        "module": "haki_ya_kazi_mcp", "script": None, "kind": "server",
+        "module": "haki_ya_kazi_mcp", "script": "haki-ya-kazi-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "haki ya kazi = labour rights",
         "desc": "Employment rights in Swahili — contracts, dismissal, leave, minimum wage.",
     },
     "kazi-mcp": {
-        "module": "kazi_mcp", "script": None, "kind": "server",
+        "module": "kazi_mcp", "script": "kazi-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "kazi = work",
         "desc": "Jobs and livelihoods reference for the Kenyan labour market.",
     },
     "habari-mcp": {
-        "module": "habari_mcp", "script": None, "kind": "server",
+        "module": "habari_mcp", "script": "habari-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "habari = news",
         "desc": "Media and public-information tools for journalists and civic monitors.",
     },
     "elimu-mcp": {
-        "module": "elimu_mcp", "script": None, "kind": "server",
+        "module": "elimu_mcp", "script": "elimu-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "elimu = education",
         "desc": "Education system reference — institutions, curricula, transitions.",
     },
@@ -162,55 +162,55 @@ SERVERS: dict[str, dict] = {
         "desc": "Skills and reference verification where credentials are hard to check and trust is expensive.",
     },
     "historia-mcp": {
-        "module": "historia_mcp", "script": None, "kind": "server",
+        "module": "historia_mcp", "script": "historia-mcp", "kind": "server",
         "packs": ["civic"], "gloss": "historia = history",
         "desc": "East African historical corpora as queryable institutional memory.",
     },
     # ---- diaspora ----
     "diaspora-mcp": {
-        "module": "diaspora_mcp", "script": None, "kind": "server",
+        "module": "diaspora_mcp", "script": "diaspora-mcp", "kind": "server",
         "packs": ["diaspora"], "gloss": "diaspora",
         "desc": "Diaspora workflows — documents, timelines, and cross-border obligations in one place.",
     },
     "ardhi-mcp": {
-        "module": "ardhi_mcp", "script": None, "kind": "server",
+        "module": "ardhi_mcp", "script": "ardhi-mcp", "kind": "server",
         "packs": ["diaspora"], "gloss": "ardhi = land",
         "desc": "Land records and transaction guidance — reducing opacity in Kenya's highest-stakes asset class.",
     },
     "nyumba-mcp": {
-        "module": "nyumba_mcp", "script": None, "kind": "server",
+        "module": "nyumba_mcp", "script": "nyumba-mcp", "kind": "server",
         "packs": ["diaspora"], "gloss": "nyumba = housing",
         "desc": "Housing and construction reference for diaspora builders and local buyers.",
     },
     "familia-mcp": {
-        "module": "familia_mcp", "script": None, "kind": "server",
+        "module": "familia_mcp", "script": "familia-mcp", "kind": "server",
         "packs": ["diaspora"], "gloss": "familia = family",
         "desc": "Family workflows — succession, guardianship, and property protection guidance.",
     },
     "jumuia-mcp": {
-        "module": "jumuia_mcp", "script": None, "kind": "server",
+        "module": "jumuia_mcp", "script": "jumuia-mcp", "kind": "server",
         "packs": ["diaspora"], "gloss": "jumuia = community",
         "desc": "Community group coordination — chamas, welfare groups, and their record-keeping.",
     },
     "church-mcp": {
-        "module": "church_mcp", "script": None, "kind": "server",
+        "module": "church_mcp", "script": "church-mcp", "kind": "server",
         "packs": ["diaspora"], "gloss": "faith institutions",
         "desc": "Membership, giving, and program workflows for faith institutions — trusted coordination structures still run on paper.",
     },
     # ---- mobility & energy ----
     "usafiri-mcp": {
-        "module": "usafiri_mcp", "script": None, "kind": "server",
+        "module": "usafiri_mcp", "script": "usafiri-mcp", "kind": "server",
         "packs": ["mobility-energy"], "gloss": "usafiri = transport",
         "desc": "Transport reference — matatu routes, boda economics, logistics context.",
     },
     "nishati-mcp": {
-        "module": "nishati_mcp", "script": None, "kind": "server",
+        "module": "nishati_mcp", "script": "nishati-mcp", "kind": "server",
         "packs": ["mobility-energy"], "gloss": "nishati = energy",
         "desc": "Energy access and program data for last-mile connection decisions.",
     },
     # ---- language ----
     "tafsiri-mcp": {
-        "module": "tafsiri_mcp", "script": None, "kind": "server",
+        "module": "tafsiri_mcp", "script": "tafsiri-mcp", "kind": "server",
         "packs": ["language"], "gloss": "tafsiri = translation",
         "desc": "Swahili/English translation infrastructure for agent pipelines.",
     },
