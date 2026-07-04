@@ -9,7 +9,7 @@ def test_build_block_uses_concise_keys():
     block = build_block(["mpesa-mcp", "bima-mcp"], python="PY")
     assert set(block) == {"mpesa", "bima"}
     assert block["bima"]["command"] == "bima-mcp"          # script path
-    assert block["mpesa"]["args"] == ["-m", "mpesa_mcp.server"]  # module path
+    assert block["mpesa"]["command"] == "mpesa-mcp"  # console script (post script-wave)
 
 
 def test_merge_preserves_existing_and_backs_up(tmp_path: Path):
