@@ -3,7 +3,7 @@ requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "reli"
+name = "reli-cli"
 version = "0.1.0"
 description = "On-ramp to East Africa's MCP coordination stack — install, wire, verify, and demo 30+ Kenya-domain MCP servers in one command."
 readme = "README.md"
