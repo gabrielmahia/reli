@@ -5,7 +5,7 @@ East Africa has 30+ open MCP servers covering payments, tax, health, drought, la
 `reli` (Swahili: *rails*) is that on-ramp. One command chain takes any MCP-capable client from zero to the full Kenya coordination stack:
 
 ```bash
-pip install reli
+pip install reli-cli
 reli up --pack core        # install + wire into Claude Desktop + verify
 ```
 
