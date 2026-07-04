@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reli"
+version = "0.1.0"
+description = "On-ramp to East Africa's MCP coordination stack — install, wire, verify, and demo 30+ Kenya-domain MCP servers in one command."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "AfriKaziOS maintainers"}]
+keywords = ["mcp", "kenya", "east-africa", "swahili", "ai-agents", "coordination"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: System :: Installation/Setup",
+]
+
+[project.urls]
+Homepage = "https://github.com/gabrielmahia/reli"
+Repository = "https://github.com/gabrielmahia/reli"
+Documentation = "https://gabrielmahia.github.io/nairobi-stack/"
+Issues = "https://github.com/gabrielmahia/reli/issues"
+
+[project.scripts]
+reli = "reli.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["reli"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
