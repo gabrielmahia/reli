@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "reli-cli"
-version = "0.1.0"
+version = "0.1.1"
 description = "On-ramp to East Africa's MCP coordination stack — install, wire, verify, and demo 30+ Kenya-domain MCP servers in one command."
 readme = "README.md"
 requires-python = ">=3.10"
