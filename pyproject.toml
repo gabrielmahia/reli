@@ -25,6 +25,9 @@ Homepage = "https://github.com/gabrielmahia/reli"
 Repository = "https://github.com/gabrielmahia/reli"
 Documentation = "https://gabrielmahia.github.io/nairobi-stack/"
 Issues = "https://github.com/gabrielmahia/reli/issues"
+"MCP Registry" = "https://registry.modelcontextprotocol.io"
+Datasets = "https://huggingface.co/gmahia"
+Evaluation = "https://github.com/gabrielmahia/kipimo"
 
 [project.scripts]
 reli = "reli.cli:main"
