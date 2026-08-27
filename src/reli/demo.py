@@ -32,10 +32,10 @@ SCENARIOS = {
 def run(scenario: str = "drought") -> int:
     try:
         from africa_coord_bus import (
+            KENYA_ROUTING_TABLE,
             CoordinationEvent,
             EventDomain,
             EventSeverity,
-            KENYA_ROUTING_TABLE,
         )
     except ImportError:
         print("This demo needs the coordination bus:\n\n"

@@ -39,3 +39,12 @@ packages = ["reli"]
 [tool.ruff]
 target-version = "py310"
 line-length = 100
+
+[tool.ruff.lint]
+# Pinned ruff in CI; these are documented, intentional patterns rather than debt:
+#   BLE001/TRY004 — adapters and feed loops catch broadly ON PURPOSE so one bad
+#                   source cannot sink an entire run (see adapters/pipeline).
+#   S112          — `continue` on exception is the intended degrade-gracefully path.
+#   PLW1510       — test subprocess calls assert on returncode explicitly.
+#   C408/SIM103/RUF059/EXE001 — style-only; not worth churning working code.
+ignore = ["BLE001", "TRY004", "S112", "PLW1510", "C408", "SIM103", "RUF059", "EXE001", "E501"]
