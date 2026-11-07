@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "reli-cli"
+abstract: "On-ramp to East Africa's MCP coordination stack — install, wire, verify, and demo 30+ Kenya-domain MCP servers in one command."
+version: "0.1.2"
+authors:
+  - family-names: "Mahia"
+    given-names: "Gabriel"
+repository-code: "https://github.com/gabrielmahia/reli"
+license: "MIT"
